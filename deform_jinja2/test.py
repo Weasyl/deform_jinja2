@@ -35,7 +35,7 @@ class TestTranslation(unittest.TestCase):
         f = deform.Form(TestSchema())
         try:
             a = f.validate([('s', 'invalid')]) # validator not called if missing
-        except ValidationFailure, e:
+        except ValidationFailure as e:
             invalid = e.render()
         assert invalid, "ValidationFailure was not raised"
         assert "ctrlHolder" in invalid, "uni-form template was not used"
