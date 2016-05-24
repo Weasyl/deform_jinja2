@@ -23,7 +23,7 @@ requires = ['deform', 'Jinja2']
 
 setup(
     name='deform_jinja2',
-    version='0.5-2',
+    version='0.5+weasyl.1',
     description='Jinja2 templates for Deform widgets',
     long_description=README,
     classifiers=[
